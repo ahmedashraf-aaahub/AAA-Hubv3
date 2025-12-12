@@ -3,51 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>AAA Hub | تواصل معنا</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="courses.html">الكورسات</a></li>
-                <li><a href="services.html">خدماتنا</a></li>
-                <li><a href="about.html">عن المهندس</a></li>
-                <li><a href="contact.html" class="active">تواصل معنا</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="contact-en.html" class="lang-btn">EN</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="courses.html" class="nav-link">الكورسات</a>
+                <a href="services.html" class="nav-link">خدماتنا</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link active">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact-en.html" class="lang-toggle">EN</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section">
-        <div class="section-header">
-            <h2>تواصل معنا</h2>
-            <p>نحن هنا للإجابة على جميع استفساراتك</p>
-        </div>
-        <div class="contact-container">
-            <div class="info-box">
-                <h3 style="color:white; margin-bottom:30px;">بيانات الاتصال</h3>
-                <div class="info-item"><i class="fas fa-envelope"></i> info@aaahub.com</div>
-                <div class="info-item"><i class="fas fa-phone"></i> +20 10X XXX XXXX</div>
-                <div class="info-item"><i class="fas fa-map-marker-alt"></i> أسيوط، مصر</div>
-                <div class="info-item"><i class="fab fa-whatsapp"></i> متاح 24/7</div>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container" style="text-align: center;">
+            <div class="section-title">
+                <h2>نحن هنا لمساعدتك</h2>
+                <p>لديك استفسار؟ تواصل معنا مباشرة</p>
             </div>
-            <form class="form-box">
-                <div class="form-group"><input type="text" class="form-input" placeholder="الاسم"></div>
-                <div class="form-group"><input type="email" class="form-input" placeholder="البريد الإلكتروني"></div>
-                <div class="form-group"><textarea class="form-input" rows="5" placeholder="الرسالة"></textarea></div>
-                <button class="submit-btn">إرسال الرسالة</button>
-            </form>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>واتساب</h3>
+                    <p>أسرع طريقة للتواصل والاشتراك</p>
+                    <a href="https://wa.me/201143092375" target="_blank" class="btn btn-primary" style="margin-top: 15px;">راسلنا الآن</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>للدعم الفني والاستفسارات العامة</p>
+                    <a href="mailto:support@aaahub.online" class="btn btn-outline" style="margin-top: 15px; border: 1px solid var(--primary-color); padding: 10px 20px; border-radius: 50px;">support@aaahub.online</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer><div class="copyright"><p>جميع الحقوق محفوظة © 2025 AAA Hub</p></div></footer>
-    <script src="js/script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
