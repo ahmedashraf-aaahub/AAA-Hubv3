@@ -4,96 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Hub | الرئيسية</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="https://wa.me/2010xxxxxx" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
-
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="courses.html">الكورسات</a></li>
-                <li><a href="services.html">خدماتنا</a></li>
-                <li><a href="about.html">عن المهندس</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="index-en.html" class="lang-btn">EN</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="AAA Hub Logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">الرئيسية</a>
+                <a href="courses.html" class="nav-link">الكورسات</a>
+                <a href="services.html" class="nav-link">خدماتنا</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="index-en.html" class="lang-toggle">EN</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>أهلاً بك في <span>AAA Hub</span></h1>
-            <p>منصتك الأولى لاحتراف التكنولوجيا وتحليل البيانات. نتعلم لننمو، ونطبق لننجح مع المهندس أحمد أشرف.</p>
-            <div>
-                <a href="courses.html" class="btn btn-primary">تصفح الكورسات</a>
-                <a href="services.html" class="btn btn-outline">خدمات الشركات</a>
-            </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">اصنع مستقبلك مع <span>AAA Hub</span></h1>
+            <p class="hero-desc">تعلم مهارات العمل الحر وتحليل البيانات من الصفر حتى الاحتراف، وابدأ رحلة الربح بالدولار.</p>
+            <a href="courses.html" class="btn btn-primary">تصفح الدبلومات</a>
         </div>
     </section>
 
     <section class="section">
-        <div class="section-header">
-            <h2>آراء عملائنا وطلابنا</h2>
-            <p>قصص نجاح حقيقية من جميع أنحاء الوطن العربي</p>
-        </div>
-        <div class="grid">
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"شرح المهندس أحمد في الويب ديزاين خلاني أعمل أول موقع ليا وأبيعه في أقل من شهر. بجد شكراً."</p>
-                <span class="client-name">محمد علي</span>
-                <span class="client-country">القاهرة، مصر 🇪🇬</span>
+        <div class="container">
+            <div class="section-title">
+                <h2>لماذا تختارنا؟</h2>
+                <p>إجابات على كل الأسئلة التي تدور في ذهنك</p>
             </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"كورس تحليل البيانات كان نقطة تحول. الشرح مبسط والتركيز على العملي فرق معايا جداً."</p>
-                <span class="client-name">سارة القحطاني</span>
-                <span class="client-country">الرياض، السعودية 🇸🇦</span>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"الدعم الفني متاح دايماً والشرح مفهوم جداً للمبتدئين، أنصح أي حد يبدأ معاهم."</p>
-                <span class="client-name">يوسف شمعون</span>
-                <span class="client-country">بيروت، لبنان 🇱🇧</span>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"استفدت جداً من كورس الفريلانس، المحتوى دسم ومباشر."</p>
-                <span class="client-name">عمر المختار</span>
-                <span class="client-country">طرابلس، ليبيا 🇱🇾</span>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>من الصفر</h3>
+                    <p>الكورس مخصص لأي حد يتعلمه لأنه بيبدأ معاك من الصفر يعني مش محتاج منك أي معلومات سابقة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>وقت قياسي</h3>
+                    <p>تعلم المهارات مش هياخد منك وقت. صممنا الكورس لتتعلم أي مهارة في أقل من يوم.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>من أي جهاز</h3>
+                    <p>تقدر تطبق الكورس من تليفونك، كمبيوتر، أو لابتوب. أي جهاز فيه نت شغال معاك.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>عن AAA Hub</h3>
-                <p>نحن نصنع المستقبل الرقمي من خلال التعليم والخدمات التقنية المتطورة.</p>
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>آراء أبطالنا</h2>
+                <p>قصص نجاح حقيقية من طلابنا حول العالم</p>
             </div>
-            <div class="footer-col">
-                <h3>روابط سريعة</h3>
-                <a href="courses.html">الكورسات</a>
-                <a href="services.html">الخدمات</a>
-                <a href="contact.html">اتصل بنا</a>
-            </div>
-            <div class="footer-col">
-                <h3>تواصل معنا</h3>
-                <a href="#">info@aaahub.com</a>
-                <a href="#">+20 10X XXX XXXX</a>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p class="mb-2">"بصراحة الدبلومة غيرت تفكيري تماماً عن الشغل أونلاين. الشرح بسيط جداً وبدأت أطبق فعلياً."</p>
+                    <div class="client-info">
+                        <h4>محمد أحمد</h4>
+                        <span class="client-country">مصر 🇪🇬</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="mb-2">"كنت متردد بسبب الوقت، لكن فعلاً الكورس منظم جداً والمهارات عملية ومطلوبة."</p>
+                    <div class="client-info">
+                        <h4>عبدالله العتيبي</h4>
+                        <span class="client-country">السعودية 🇸🇦</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="mb-2">"أفضل استثمار عملته. الدعم الفني ممتاز وبيتابعوا معانا خطوة بخطوة."</p>
+                    <div class="client-info">
+                        <h4>سارة الليبي</h4>
+                        <span class="client-country">ليبيا 🇱🇾</span>
+                    </div>
+                </div>
+                 <div class="testimonial-card">
+                    <p class="mb-2">"شرح البروفيسور ممتاز، تعلمت التصميم والمونتاج وبدأت أعمل شغل خاص بي."</p>
+                    <div class="client-info">
+                        <h4>عمر بابكر</h4>
+                        <span class="client-country">السودان 🇸🇩</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="copyright"><p>جميع الحقوق محفوظة © 2025 AAA Hub | م. أحمد أشرف</p></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
