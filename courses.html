@@ -2,59 +2,96 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Hub | الكورسات</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="courses.html" class="active">الكورسات</a></li>
-                <li><a href="services.html">خدماتنا</a></li>
-                <li><a href="about.html">عن المهندس</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="courses-en.html" class="lang-btn">EN</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="courses.html" class="nav-link active">الكورسات</a>
+                <a href="services.html" class="nav-link">خدماتنا</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="courses-en.html" class="lang-toggle">EN</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section bg-alt">
-        <div class="section-header">
-            <h2>مسارات التعلم</h2>
-            <p>كورسات عملية تأهلك لسوق العمل مباشرة</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <img src="images/course-freelance.jpg" alt="Freelance">
-                <div class="card-body">
-                    <span class="price-tag">450 جنيه</span>
-                    <h3>الكورس الشامل للفريلانسر</h3>
-                    <p>تعلم 12 مهارة في كورس واحد: تصميم مواقع، موشن جرافيك، وأدوات الذكاء الاصطناعي.</p>
-                    <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">اشترك الآن</a>
-                </div>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>المسارات التعليمية</h2>
+                <p>اختر الدبلومة المناسبة وابدأ رحلتك</p>
             </div>
-            <div class="card">
-                <img src="images/course-data.jpg" alt="Data Analysis">
-                <div class="card-body">
-                    <span class="price-tag">600 جنيه</span>
-                    <h3>دبلومة تحليل البيانات</h3>
-                    <p>احتراف Excel, SQL, Python, PowerBI من الصفر حتى الاحتراف.</p>
-                    <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">اشترك الآن</a>
+            
+            <div class="features-grid"> <div class="course-card">
+                    <div class="course-img">
+                        <img src="images/course-freelance.jpg" alt="دبلومة العمل الحر">
+                    </div>
+                    <div class="course-content">
+                        <div>
+                            <h3>دبلومة العمل الحر الشاملة</h3>
+                            <p>أهم دبلومة لدينا! تعلم أكثر من 11 مهارة مطلوبة (مونتاج، جرافيك، ذكاء اصطناعي، ويب) وابدأ الربح بالدولار.</p>
+                            <ul style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-light);">
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> شهادة معتمدة</li>
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> أدوات مدفوعة مجاناً (Canva Pro)</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201143092375?text=أريد الاشتراك في دبلومة العمل الحر" target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> اشترك عبر واتساب
+                        </a>
+                    </div>
                 </div>
+
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="images/course-data.jpg" alt="تحليل البيانات">
+                    </div>
+                    <div class="course-content">
+                        <div>
+                            <h3>دبلومة تحليل البيانات</h3>
+                            <p>احترف Excel, SQL, Python, PowerBI. حول البيانات المعقدة إلى قرارات استراتيجية.</p>
+                            <ul style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-light);">
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> مشاريع عملية حقيقية</li>
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> تأهيل لسوق العمل</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201143092375?text=أريد الاشتراك في دبلومة تحليل البيانات" target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> اشترك عبر واتساب
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="copyright"><p>جميع الحقوق محفوظة © 2025 AAA Hub</p></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
