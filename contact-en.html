@@ -3,51 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>AAA Hub | Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index-en.html">Home</a></li>
-                <li><a href="courses-en.html">Courses</a></li>
-                <li><a href="services-en.html">Services</a></li>
-                <li><a href="about-en.html">About Eng.</a></li>
-                <li><a href="contact-en.html" class="active">Contact</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="contact.html" class="lang-btn">AR</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index-en.html" class="nav-link">Home</a>
+                <a href="courses-en.html" class="nav-link">Courses</a>
+                <a href="services-en.html" class="nav-link">Services</a>
+                <a href="about-en.html" class="nav-link">About Us</a>
+                <a href="contact-en.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact.html" class="lang-toggle">عربي</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section">
-        <div class="section-header">
-            <h2>Contact Us</h2>
-            <p>We are here to answer all your inquiries</p>
-        </div>
-        <div class="contact-container">
-            <div class="info-box">
-                <h3 style="color:white; margin-bottom:30px;">Contact Info</h3>
-                <div class="info-item"><i class="fas fa-envelope"></i> info@aaahub.com</div>
-                <div class="info-item"><i class="fas fa-phone"></i> +20 10X XXX XXXX</div>
-                <div class="info-item"><i class="fas fa-map-marker-alt"></i> Assiut, Egypt</div>
-                <div class="info-item"><i class="fab fa-whatsapp"></i> Available 24/7</div>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container" style="text-align: center;">
+            <div class="section-title">
+                <h2>We Are Here to Help</h2>
+                <p>Have a question? Contact us directly</p>
             </div>
-            <form class="form-box">
-                <div class="form-group"><input type="text" class="form-input" placeholder="Name"></div>
-                <div class="form-group"><input type="email" class="form-input" placeholder="Email"></div>
-                <div class="form-group"><textarea class="form-input" rows="5" placeholder="Message"></textarea></div>
-                <button class="submit-btn">Send Message</button>
-            </form>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>Fastest way to subscribe & chat</p>
+                    <a href="https://wa.me/201143092375" target="_blank" class="btn btn-primary" style="margin-top: 15px;">Message Us</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>For support and inquiries</p>
+                    <a href="mailto:support@aaahub.online" class="btn btn-outline" style="margin-top: 15px; border: 1px solid var(--primary-color); padding: 10px 20px; border-radius: 50px;">support@aaahub.online</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer><div class="copyright"><p>All Rights Reserved © 2025 AAA Hub</p></div></footer>
-    <script src="js/script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
