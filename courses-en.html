@@ -2,59 +2,98 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Hub | Courses</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index-en.html">Home</a></li>
-                <li><a href="courses-en.html" class="active">Courses</a></li>
-                <li><a href="services-en.html">Services</a></li>
-                <li><a href="about-en.html">About Eng.</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="courses.html" class="lang-btn">AR</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index-en.html" class="nav-link">Home</a>
+                <a href="courses-en.html" class="nav-link active">Courses</a>
+                <a href="services-en.html" class="nav-link">Services</a>
+                <a href="about-en.html" class="nav-link">About Us</a>
+                <a href="contact-en.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="courses.html" class="lang-toggle">عربي</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section bg-alt">
-        <div class="section-header">
-            <h2>Learning Paths</h2>
-            <p>Practical courses designed for the job market</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <img src="images/course-freelance.jpg" alt="Freelance">
-                <div class="card-body">
-                    <span class="price-tag">450 EGP</span>
-                    <h3>Freelancer Comprehensive Course</h3>
-                    <p>Master 12 skills: Web Design, Motion Graphics, and AI tools.</p>
-                    <a href="contact-en.html" class="btn btn-primary" style="width:100%; justify-content:center;">Enroll Now</a>
-                </div>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Tracks</h2>
+                <p>Choose the right diploma and start your journey</p>
             </div>
-            <div class="card">
-                <img src="images/course-data.jpg" alt="Data Analysis">
-                <div class="card-body">
-                    <span class="price-tag">600 EGP</span>
-                    <h3>Data Analysis Diploma</h3>
-                    <p>Master Excel, SQL, Python, and PowerBI from zero to hero.</p>
-                    <a href="contact-en.html" class="btn btn-primary" style="width:100%; justify-content:center;">Enroll Now</a>
+            
+            <div class="features-grid">
+                
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="images/course-freelance.jpg" alt="Freelance Diploma">
+                    </div>
+                    <div class="course-content">
+                        <div>
+                            <h3>Freelance Master Diploma</h3>
+                            <p>Our flagship diploma! Learn 11+ high-demand skills (Editing, Graphic, AI, Web) and earn in USD.</p>
+                            <ul style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-light);">
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> Certified Certificate</li>
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> Free Premium Tools (Canva Pro)</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201143092375?text=I want to join the Freelance Diploma" target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> Subscribe via WhatsApp
+                        </a>
+                    </div>
                 </div>
+
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="images/course-data.jpg" alt="Data Analysis">
+                    </div>
+                    <div class="course-content">
+                        <div>
+                            <h3>Data Analysis Diploma</h3>
+                            <p>Master Excel, SQL, Python, PowerBI. Turn complex data into strategic decisions.</p>
+                            <ul style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-light);">
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> Real-world Projects</li>
+                                <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> Job Market Ready</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/201143092375?text=I want to join the Data Analysis Diploma" target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> Subscribe via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="copyright"><p>All Rights Reserved © 2025 AAA Hub</p></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
