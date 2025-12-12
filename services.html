@@ -3,64 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>AAA Hub | خدماتنا</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="courses.html">الكورسات</a></li>
-                <li><a href="services.html" class="active">خدماتنا</a></li>
-                <li><a href="about.html">عن المهندس</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="services-en.html" class="lang-btn">EN</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="courses.html" class="nav-link">الكورسات</a>
+                <a href="services.html" class="nav-link active">خدماتنا</a>
+                <a href="about.html" class="nav-link">من نحن</a>
+                <a href="contact.html" class="nav-link">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="services-en.html" class="lang-toggle">EN</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section">
-        <div class="section-header">
-            <h2>حلول الأعمال (B2B)</h2>
-            <p>نساعد الشركات في النمو والتحول الرقمي</p>
-        </div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-laptop-code" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>تصميم وتطوير المواقع</h3>
-                    <p>نصمم مواقع عصرية ومتاجر إلكترونية متجاوبة تعزز من هوية علامتك التجارية.</p>
-                    <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content: center;">اطلب عرض سعر</a>
-                </div>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>ماذا نقدم لك؟</h2>
+                <p>قيمة حقيقية مقابل استثمارك</p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-chart-pie" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>استشارات البيانات</h3>
-                    <p>نحول بياناتك إلى تقارير تفاعلية (Dashboards) دقيقة لدعم اتخاذ القرار.</p>
-                    <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content: center;">اطلب استشارة</a>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>تعليم تفاعلي</h3>
+                    <p>أسلوب شرح مبسط (وايت بورد، موشن جرافيك) يسهل المعلومة.</p>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-video" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>صناعة المحتوى</h3>
-                    <p>إنتاج فيديوهات وموشن جرافيك احترافي للتسويق لمنتجاتك وخدماتك.</p>
-                    <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content: center;">تواصل معنا</a>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>شهادات معتمدة</h3>
+                    <p>احصل على شهادة توثق مهاراتك بعد إتمام الكورس لتقوية سيرتك الذاتية.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h3>أدوات مجانية</h3>
+                    <p>نوفر للمشتركين أدوات مدفوعة بشكل مجاني مثل Canva Pro وغيرها.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>دعم العمل الحر</h3>
+                    <p>بنعلمك إزاي توصل للعملاء وتبدأ شغل وتعمل فلوس أونلاين.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="copyright"><p>جميع الحقوق محفوظة © 2025 AAA Hub</p></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
