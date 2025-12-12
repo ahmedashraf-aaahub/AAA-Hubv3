@@ -2,45 +2,65 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>AAA Hub | About Eng.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>AAA Hub | About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="AAA Hub"></a>
-            <ul class="nav-links">
-                <li><a href="index-en.html">Home</a></li>
-                <li><a href="courses-en.html">Courses</a></li>
-                <li><a href="services-en.html">Services</a></li>
-                <li><a href="about-en.html" class="active">About Eng.</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="tools">
-                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-                <a href="about.html" class="lang-btn">AR</a>
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index-en.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <nav class="nav-menu">
+                <a href="index-en.html" class="nav-link">Home</a>
+                <a href="courses-en.html" class="nav-link">Courses</a>
+                <a href="services-en.html" class="nav-link">Services</a>
+                <a href="about-en.html" class="nav-link active">About Us</a>
+                <a href="contact-en.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="about.html" class="lang-toggle">عربي</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="section">
-        <div class="contact-container" style="align-items: center;">
-            <div>
-                <h2 style="font-size: 2.8rem; color: var(--primary); margin-bottom: 15px;">Eng. Ahmed Ashraf</h2>
-                <h3 style="color: var(--secondary); margin-bottom: 20px;">CEO & Founder of AAA Hub</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">Electrical Technology Engineer and R&D member at Assiut International Technology University (AITU).</p>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">+6 Years experience in Programming and Data Analysis. Led major projects like "Smart Village" and Smart Irrigation Systems.</p>
-                <a href="contact-en.html" class="btn btn-primary">Contact Engineer</a>
+    <section class="section" style="margin-top: 80px;">
+        <div class="container about-wrapper">
+            <div class="about-img">
+                <img src="images/professor.jpg" alt="Professor Ahmed Ashraf">
             </div>
-            <div>
-                <img src="images/professor.jpg" alt="Ahmed Ashraf" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow); border: 4px solid var(--secondary);">
+            <div class="about-text">
+                <h2>Who Are We?</h2>
+                <p class="mb-2">We are <strong>AAA Hub</strong>, a leading educational platform aiming to empower Arab youth with future skills. Our vision is that technical education and freelancing should be accessible to everyone, regardless of prior experience.</p>
+                <p>Founded by "Professor" Ahmed Ashraf, with years of experience in content creation and technical education, we bring you condensed and practical expertise.</p>
+                
+                <h3 style="margin-top: 20px; color: var(--primary-color);">Why We Are Special?</h3>
+                <ul style="margin-top: 10px;">
+                    <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> We start with you from zero.</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> Focus on practical application and earning.</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--secondary-color)"></i> A supportive community of students.</li>
+                </ul>
             </div>
         </div>
     </section>
-    
-    <footer><div class="copyright"><p>All Rights Reserved © 2025 AAA Hub</p></div></footer>
-    <script src="js/script.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61573117270705" target="_blank" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@aaa_hub" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-ashraf-6a171b311" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@AAA_Hub" target="_blank" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:support@aaahub.online" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AAA Hub. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
