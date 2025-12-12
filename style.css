@@ -71,7 +71,7 @@ header {
 /* --- Hero Section --- */
 .hero {
     min-height: 90vh; display: flex; align-items: center; justify-content: center;
-    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(25, 135, 84, 0.8)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(25, 135, 84, 0.8)), url('../images/hero-bg.jpg.jpg');
     background-size: cover; background-position: center; background-attachment: fixed;
     color: white; text-align: center; position: relative; padding: 20px;
 }
